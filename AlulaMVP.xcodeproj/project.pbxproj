@@ -18,6 +18,12 @@
 		55669F202BD6B0DA00F7B540 /* SignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F1F2BD6B0DA00F7B540 /* SignupCoordinator.swift */; };
 		55669F222BD6B10E00F7B540 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F212BD6B10E00F7B540 /* LoginCoordinator.swift */; };
 		55669F252BD6B14E00F7B540 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F242BD6B14E00F7B540 /* HomeCoordinator.swift */; };
+		55669F2A2BD6B25400F7B540 /* FontSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F292BD6B25400F7B540 /* FontSystem.swift */; };
+		55669F2D2BD6B27000F7B540 /* ColorSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F2C2BD6B27000F7B540 /* ColorSystem.swift */; };
+		55669F302BD6B2AA00F7B540 /* IconDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F2F2BD6B2AA00F7B540 /* IconDesignSystem.swift */; };
+		55669F342BD6B45600F7B540 /* NeueRoman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55669F322BD6B3F600F7B540 /* NeueRoman.ttf */; };
+		55669F352BD6B45800F7B540 /* NeueMediu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55669F332BD6B3F600F7B540 /* NeueMediu.ttf */; };
+		55669F362BD6B45B00F7B540 /* NeueBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55669F312BD6B3F600F7B540 /* NeueBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		55669F1F2BD6B0DA00F7B540 /* SignupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCoordinator.swift; sourceTree = "<group>"; };
 		55669F212BD6B10E00F7B540 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		55669F242BD6B14E00F7B540 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		55669F292BD6B25400F7B540 /* FontSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSystem.swift; sourceTree = "<group>"; };
+		55669F2C2BD6B27000F7B540 /* ColorSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSystem.swift; sourceTree = "<group>"; };
+		55669F2F2BD6B2AA00F7B540 /* IconDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconDesignSystem.swift; sourceTree = "<group>"; };
+		55669F312BD6B3F600F7B540 /* NeueBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeueBold.ttf; sourceTree = "<group>"; };
+		55669F322BD6B3F600F7B540 /* NeueRoman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeueRoman.ttf; sourceTree = "<group>"; };
+		55669F332BD6B3F600F7B540 /* NeueMediu.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeueMediu.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +99,8 @@
 		55669F0C2BD6A95F00F7B540 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				55669F272BD6B22F00F7B540 /* Fonts */,
+				55669F262BD6B20C00F7B540 /* DesignSystem */,
 				55669F002BD6A4FF00F7B540 /* Assets.xcassets */,
 				55669F022BD6A4FF00F7B540 /* LaunchScreen.storyboard */,
 			);
@@ -186,6 +200,50 @@
 			path = HomeCoordinator;
 			sourceTree = "<group>";
 		};
+		55669F262BD6B20C00F7B540 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				55669F2E2BD6B28C00F7B540 /* ImageSystem */,
+				55669F2B2BD6B26600F7B540 /* ColorSystem */,
+				55669F282BD6B24500F7B540 /* FontSystem */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		55669F272BD6B22F00F7B540 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				55669F312BD6B3F600F7B540 /* NeueBold.ttf */,
+				55669F332BD6B3F600F7B540 /* NeueMediu.ttf */,
+				55669F322BD6B3F600F7B540 /* NeueRoman.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		55669F282BD6B24500F7B540 /* FontSystem */ = {
+			isa = PBXGroup;
+			children = (
+				55669F292BD6B25400F7B540 /* FontSystem.swift */,
+			);
+			path = FontSystem;
+			sourceTree = "<group>";
+		};
+		55669F2B2BD6B26600F7B540 /* ColorSystem */ = {
+			isa = PBXGroup;
+			children = (
+				55669F2C2BD6B27000F7B540 /* ColorSystem.swift */,
+			);
+			path = ColorSystem;
+			sourceTree = "<group>";
+		};
+		55669F2E2BD6B28C00F7B540 /* ImageSystem */ = {
+			isa = PBXGroup;
+			children = (
+				55669F2F2BD6B2AA00F7B540 /* IconDesignSystem.swift */,
+			);
+			path = ImageSystem;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,6 +303,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55669F042BD6A4FF00F7B540 /* LaunchScreen.storyboard in Resources */,
+				55669F362BD6B45B00F7B540 /* NeueBold.ttf in Resources */,
+				55669F342BD6B45600F7B540 /* NeueRoman.ttf in Resources */,
+				55669F352BD6B45800F7B540 /* NeueMediu.ttf in Resources */,
 				55669F012BD6A4FF00F7B540 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +320,10 @@
 				55669F192BD6B04000F7B540 /* Coordinator.swift in Sources */,
 				55669EF82BD6A4FE00F7B540 /* AppDelegate.swift in Sources */,
 				55669F252BD6B14E00F7B540 /* HomeCoordinator.swift in Sources */,
+				55669F2A2BD6B25400F7B540 /* FontSystem.swift in Sources */,
 				55669F202BD6B0DA00F7B540 /* SignupCoordinator.swift in Sources */,
+				55669F302BD6B2AA00F7B540 /* IconDesignSystem.swift in Sources */,
+				55669F2D2BD6B27000F7B540 /* ColorSystem.swift in Sources */,
 				55669F162BD6AEB400F7B540 /* RootCoordinator.swift in Sources */,
 				55669F1B2BD6B06100F7B540 /* ChildCoordinator.swift in Sources */,
 				55669F1E2BD6B09E00F7B540 /* AuthCoordinator.swift in Sources */,
