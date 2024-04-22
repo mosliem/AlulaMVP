@@ -32,6 +32,9 @@
 		55669F4F2BD6FB1800F7B540 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F4E2BD6FB1800F7B540 /* BaseRepository.swift */; };
 		55669F512BD6FB6A00F7B540 /* BaseLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F502BD6FB6A00F7B540 /* BaseLocalRepository.swift */; };
 		55669F532BD6FCF800F7B540 /* BaseRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F522BD6FCF800F7B540 /* BaseRemoteRepository.swift */; };
+		55669F562BD710D100F7B540 /* FloatingLabelTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55669F552BD710D100F7B540 /* FloatingLabelTextField.xib */; };
+		55669F5A2BD7123A00F7B540 /* FloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F592BD7123A00F7B540 /* FloatingLabelTextField.swift */; };
+		55669F5C2BD7132D00F7B540 /* FloatingTextFieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F5B2BD7132D00F7B540 /* FloatingTextFieldModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,9 @@
 		55669F4E2BD6FB1800F7B540 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		55669F502BD6FB6A00F7B540 /* BaseLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocalRepository.swift; sourceTree = "<group>"; };
 		55669F522BD6FCF800F7B540 /* BaseRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRemoteRepository.swift; sourceTree = "<group>"; };
+		55669F552BD710D100F7B540 /* FloatingLabelTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatingLabelTextField.xib; sourceTree = "<group>"; };
+		55669F592BD7123A00F7B540 /* FloatingLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelTextField.swift; sourceTree = "<group>"; };
+		55669F5B2BD7132D00F7B540 /* FloatingTextFieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextFieldModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		55669EF62BD6A4FE00F7B540 /* AlulaMVP */ = {
 			isa = PBXGroup;
 			children = (
+				55669F542BD7108D00F7B540 /* Utils */,
 				55669F472BD6D94E00F7B540 /* Base */,
 				55669F3F2BD6B63C00F7B540 /* DIContainer */,
 				55669F132BD6AE6E00F7B540 /* Navigation */,
@@ -282,6 +289,32 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		55669F542BD7108D00F7B540 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				55669F5D2BD7139F00F7B540 /* ReusableView */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		55669F5D2BD7139F00F7B540 /* ReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				55669F5E2BD713AC00F7B540 /* FloatingTextField */,
+			);
+			path = ReusableView;
+			sourceTree = "<group>";
+		};
+		55669F5E2BD713AC00F7B540 /* FloatingTextField */ = {
+			isa = PBXGroup;
+			children = (
+				55669F552BD710D100F7B540 /* FloatingLabelTextField.xib */,
+				55669F592BD7123A00F7B540 /* FloatingLabelTextField.swift */,
+				55669F5B2BD7132D00F7B540 /* FloatingTextFieldModel.swift */,
+			);
+			path = FloatingTextField;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,6 +383,7 @@
 			files = (
 				55669F042BD6A4FF00F7B540 /* LaunchScreen.storyboard in Resources */,
 				55669F362BD6B45B00F7B540 /* NeueBold.ttf in Resources */,
+				55669F562BD710D100F7B540 /* FloatingLabelTextField.xib in Resources */,
 				55669F342BD6B45600F7B540 /* NeueRoman.ttf in Resources */,
 				55669F352BD6B45800F7B540 /* NeueMediu.ttf in Resources */,
 				55669F012BD6A4FF00F7B540 /* Assets.xcassets in Resources */,
@@ -363,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55669F5A2BD7123A00F7B540 /* FloatingLabelTextField.swift in Sources */,
 				55669F492BD6D96800F7B540 /* BaseViewController.swift in Sources */,
 				55669F4B2BD6DA4300F7B540 /* BasePresenter.swift in Sources */,
 				55669F4D2BD6FB0700F7B540 /* BaseUsecase.swift in Sources */,
@@ -375,6 +410,7 @@
 				55669F302BD6B2AA00F7B540 /* IconDesignSystem.swift in Sources */,
 				55669F2D2BD6B27000F7B540 /* ColorSystem.swift in Sources */,
 				55669F4F2BD6FB1800F7B540 /* BaseRepository.swift in Sources */,
+				55669F5C2BD7132D00F7B540 /* FloatingTextFieldModel.swift in Sources */,
 				55669F162BD6AEB400F7B540 /* RootCoordinator.swift in Sources */,
 				55669F1B2BD6B06100F7B540 /* ChildCoordinator.swift in Sources */,
 				55669F512BD6FB6A00F7B540 /* BaseLocalRepository.swift in Sources */,
