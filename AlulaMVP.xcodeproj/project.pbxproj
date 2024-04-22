@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,8 @@
 		55669F342BD6B45600F7B540 /* NeueRoman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55669F322BD6B3F600F7B540 /* NeueRoman.ttf */; };
 		55669F352BD6B45800F7B540 /* NeueMediu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55669F332BD6B3F600F7B540 /* NeueMediu.ttf */; };
 		55669F362BD6B45B00F7B540 /* NeueBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55669F312BD6B3F600F7B540 /* NeueBold.ttf */; };
+		55669F392BD6B53400F7B540 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 55669F382BD6B53400F7B540 /* Factory */; };
+		55669F3E2BD6B58F00F7B540 /* Utilits in Frameworks */ = {isa = PBXBuildFile; productRef = 55669F3D2BD6B58F00F7B540 /* Utilits */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55669F392BD6B53400F7B540 /* Factory in Frameworks */,
+				55669F3E2BD6B58F00F7B540 /* Utilits in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +264,10 @@
 			dependencies = (
 			);
 			name = AlulaMVP;
+			packageProductDependencies = (
+				55669F382BD6B53400F7B540 /* Factory */,
+				55669F3D2BD6B58F00F7B540 /* Utilits */,
+			);
 			productName = AlulaMVP;
 			productReference = 55669EF42BD6A4FE00F7B540 /* AlulaMVP.app */;
 			productType = "com.apple.product-type.application";
@@ -288,6 +296,10 @@
 				Base,
 			);
 			mainGroup = 55669EEB2BD6A4FE00F7B540;
+			packageReferences = (
+				55669F372BD6B53400F7B540 /* XCRemoteSwiftPackageReference "Factory" */,
+				55669F3A2BD6B55900F7B540 /* XCLocalSwiftPackageReference "../iOSProjects/Utilits" */,
+			);
 			productRefGroup = 55669EF52BD6A4FE00F7B540 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -541,6 +553,36 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		55669F3A2BD6B55900F7B540 /* XCLocalSwiftPackageReference "../iOSProjects/Utilits" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../iOSProjects/Utilits;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		55669F372BD6B53400F7B540 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55669F382BD6B53400F7B540 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55669F372BD6B53400F7B540 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+		55669F3D2BD6B58F00F7B540 /* Utilits */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Utilits;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 55669EEC2BD6A4FE00F7B540 /* Project object */;
 }
