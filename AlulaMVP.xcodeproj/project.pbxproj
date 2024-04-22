@@ -3,27 +3,63 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		55669EF82BD6A4FE00F7B540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669EF72BD6A4FE00F7B540 /* AppDelegate.swift */; };
 		55669EFA2BD6A4FE00F7B540 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669EF92BD6A4FE00F7B540 /* SceneDelegate.swift */; };
-		55669EFC2BD6A4FE00F7B540 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669EFB2BD6A4FE00F7B540 /* ViewController.swift */; };
-		55669EFF2BD6A4FE00F7B540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55669EFD2BD6A4FE00F7B540 /* Main.storyboard */; };
 		55669F012BD6A4FF00F7B540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55669F002BD6A4FF00F7B540 /* Assets.xcassets */; };
 		55669F042BD6A4FF00F7B540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55669F022BD6A4FF00F7B540 /* LaunchScreen.storyboard */; };
+		55669F162BD6AEB400F7B540 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F152BD6AEB400F7B540 /* RootCoordinator.swift */; };
+		55669F192BD6B04000F7B540 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F182BD6B04000F7B540 /* Coordinator.swift */; };
+		55669F1B2BD6B06100F7B540 /* ChildCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F1A2BD6B06100F7B540 /* ChildCoordinator.swift */; };
+		55669F1E2BD6B09E00F7B540 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F1D2BD6B09E00F7B540 /* AuthCoordinator.swift */; };
+		55669F202BD6B0DA00F7B540 /* SignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F1F2BD6B0DA00F7B540 /* SignupCoordinator.swift */; };
+		55669F222BD6B10E00F7B540 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F212BD6B10E00F7B540 /* LoginCoordinator.swift */; };
+		55669F252BD6B14E00F7B540 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F242BD6B14E00F7B540 /* HomeCoordinator.swift */; };
+		55669F2A2BD6B25400F7B540 /* FontSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F292BD6B25400F7B540 /* FontSystem.swift */; };
+		55669F2D2BD6B27000F7B540 /* ColorSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F2C2BD6B27000F7B540 /* ColorSystem.swift */; };
+		55669F302BD6B2AA00F7B540 /* IconDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F2F2BD6B2AA00F7B540 /* IconDesignSystem.swift */; };
+		55669F342BD6B45600F7B540 /* NeueRoman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55669F322BD6B3F600F7B540 /* NeueRoman.ttf */; };
+		55669F352BD6B45800F7B540 /* NeueMediu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55669F332BD6B3F600F7B540 /* NeueMediu.ttf */; };
+		55669F362BD6B45B00F7B540 /* NeueBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55669F312BD6B3F600F7B540 /* NeueBold.ttf */; };
+		55669F392BD6B53400F7B540 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 55669F382BD6B53400F7B540 /* Factory */; };
+		55669F3E2BD6B58F00F7B540 /* Utilits in Frameworks */ = {isa = PBXBuildFile; productRef = 55669F3D2BD6B58F00F7B540 /* Utilits */; };
+		55669F492BD6D96800F7B540 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F482BD6D96800F7B540 /* BaseViewController.swift */; };
+		55669F4B2BD6DA4300F7B540 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F4A2BD6DA4300F7B540 /* BasePresenter.swift */; };
+		55669F4D2BD6FB0700F7B540 /* BaseUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F4C2BD6FB0700F7B540 /* BaseUsecase.swift */; };
+		55669F4F2BD6FB1800F7B540 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F4E2BD6FB1800F7B540 /* BaseRepository.swift */; };
+		55669F512BD6FB6A00F7B540 /* BaseLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F502BD6FB6A00F7B540 /* BaseLocalRepository.swift */; };
+		55669F532BD6FCF800F7B540 /* BaseRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F522BD6FCF800F7B540 /* BaseRemoteRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55669EF42BD6A4FE00F7B540 /* AlulaMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlulaMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55669EF72BD6A4FE00F7B540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55669EF92BD6A4FE00F7B540 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55669EFB2BD6A4FE00F7B540 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		55669EFE2BD6A4FE00F7B540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55669F002BD6A4FF00F7B540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55669F032BD6A4FF00F7B540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55669F052BD6A4FF00F7B540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55669F152BD6AEB400F7B540 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		55669F182BD6B04000F7B540 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		55669F1A2BD6B06100F7B540 /* ChildCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCoordinator.swift; sourceTree = "<group>"; };
+		55669F1D2BD6B09E00F7B540 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		55669F1F2BD6B0DA00F7B540 /* SignupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCoordinator.swift; sourceTree = "<group>"; };
+		55669F212BD6B10E00F7B540 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		55669F242BD6B14E00F7B540 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		55669F292BD6B25400F7B540 /* FontSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSystem.swift; sourceTree = "<group>"; };
+		55669F2C2BD6B27000F7B540 /* ColorSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSystem.swift; sourceTree = "<group>"; };
+		55669F2F2BD6B2AA00F7B540 /* IconDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconDesignSystem.swift; sourceTree = "<group>"; };
+		55669F312BD6B3F600F7B540 /* NeueBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeueBold.ttf; sourceTree = "<group>"; };
+		55669F322BD6B3F600F7B540 /* NeueRoman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeueRoman.ttf; sourceTree = "<group>"; };
+		55669F332BD6B3F600F7B540 /* NeueMediu.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeueMediu.ttf; sourceTree = "<group>"; };
+		55669F482BD6D96800F7B540 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		55669F4A2BD6DA4300F7B540 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		55669F4C2BD6FB0700F7B540 /* BaseUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUsecase.swift; sourceTree = "<group>"; };
+		55669F4E2BD6FB1800F7B540 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		55669F502BD6FB6A00F7B540 /* BaseLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocalRepository.swift; sourceTree = "<group>"; };
+		55669F522BD6FCF800F7B540 /* BaseRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRemoteRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55669F392BD6B53400F7B540 /* Factory in Frameworks */,
+				55669F3E2BD6B58F00F7B540 /* Utilits in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +94,192 @@
 		55669EF62BD6A4FE00F7B540 /* AlulaMVP */ = {
 			isa = PBXGroup;
 			children = (
-				55669EF72BD6A4FE00F7B540 /* AppDelegate.swift */,
-				55669EF92BD6A4FE00F7B540 /* SceneDelegate.swift */,
-				55669EFB2BD6A4FE00F7B540 /* ViewController.swift */,
-				55669EFD2BD6A4FE00F7B540 /* Main.storyboard */,
-				55669F002BD6A4FF00F7B540 /* Assets.xcassets */,
-				55669F022BD6A4FF00F7B540 /* LaunchScreen.storyboard */,
+				55669F472BD6D94E00F7B540 /* Base */,
+				55669F3F2BD6B63C00F7B540 /* DIContainer */,
+				55669F132BD6AE6E00F7B540 /* Navigation */,
+				55669F0D2BD6A96B00F7B540 /* Scenes */,
+				55669F0B2BD6A93300F7B540 /* Core */,
+				55669F0C2BD6A95F00F7B540 /* Resources */,
 				55669F052BD6A4FF00F7B540 /* Info.plist */,
 			);
 			path = AlulaMVP;
+			sourceTree = "<group>";
+		};
+		55669F0B2BD6A93300F7B540 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				55669EF72BD6A4FE00F7B540 /* AppDelegate.swift */,
+				55669EF92BD6A4FE00F7B540 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		55669F0C2BD6A95F00F7B540 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55669F272BD6B22F00F7B540 /* Fonts */,
+				55669F262BD6B20C00F7B540 /* DesignSystem */,
+				55669F002BD6A4FF00F7B540 /* Assets.xcassets */,
+				55669F022BD6A4FF00F7B540 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		55669F0D2BD6A96B00F7B540 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				55669F122BD6A9FE00F7B540 /* Signup */,
+				55669F0E2BD6A9AE00F7B540 /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		55669F0E2BD6A9AE00F7B540 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		55669F0F2BD6A9CC00F7B540 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		55669F102BD6A9E000F7B540 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		55669F122BD6A9FE00F7B540 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				55669F422BD6D91A00F7B540 /* Presentation */,
+				55669F102BD6A9E000F7B540 /* Domain */,
+				55669F0F2BD6A9CC00F7B540 /* Data */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		55669F132BD6AE6E00F7B540 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				55669F232BD6B13100F7B540 /* HomeCoordinator */,
+				55669F1C2BD6B07000F7B540 /* AuthCoordinator */,
+				55669F172BD6B03700F7B540 /* Protocols */,
+				55669F142BD6AE7B00F7B540 /* RootCoordinator */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		55669F142BD6AE7B00F7B540 /* RootCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				55669F152BD6AEB400F7B540 /* RootCoordinator.swift */,
+			);
+			path = RootCoordinator;
+			sourceTree = "<group>";
+		};
+		55669F172BD6B03700F7B540 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				55669F182BD6B04000F7B540 /* Coordinator.swift */,
+				55669F1A2BD6B06100F7B540 /* ChildCoordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		55669F1C2BD6B07000F7B540 /* AuthCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				55669F1D2BD6B09E00F7B540 /* AuthCoordinator.swift */,
+				55669F1F2BD6B0DA00F7B540 /* SignupCoordinator.swift */,
+				55669F212BD6B10E00F7B540 /* LoginCoordinator.swift */,
+			);
+			path = AuthCoordinator;
+			sourceTree = "<group>";
+		};
+		55669F232BD6B13100F7B540 /* HomeCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				55669F242BD6B14E00F7B540 /* HomeCoordinator.swift */,
+			);
+			path = HomeCoordinator;
+			sourceTree = "<group>";
+		};
+		55669F262BD6B20C00F7B540 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				55669F2E2BD6B28C00F7B540 /* ImageSystem */,
+				55669F2B2BD6B26600F7B540 /* ColorSystem */,
+				55669F282BD6B24500F7B540 /* FontSystem */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		55669F272BD6B22F00F7B540 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				55669F312BD6B3F600F7B540 /* NeueBold.ttf */,
+				55669F332BD6B3F600F7B540 /* NeueMediu.ttf */,
+				55669F322BD6B3F600F7B540 /* NeueRoman.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		55669F282BD6B24500F7B540 /* FontSystem */ = {
+			isa = PBXGroup;
+			children = (
+				55669F292BD6B25400F7B540 /* FontSystem.swift */,
+			);
+			path = FontSystem;
+			sourceTree = "<group>";
+		};
+		55669F2B2BD6B26600F7B540 /* ColorSystem */ = {
+			isa = PBXGroup;
+			children = (
+				55669F2C2BD6B27000F7B540 /* ColorSystem.swift */,
+			);
+			path = ColorSystem;
+			sourceTree = "<group>";
+		};
+		55669F2E2BD6B28C00F7B540 /* ImageSystem */ = {
+			isa = PBXGroup;
+			children = (
+				55669F2F2BD6B2AA00F7B540 /* IconDesignSystem.swift */,
+			);
+			path = ImageSystem;
+			sourceTree = "<group>";
+		};
+		55669F3F2BD6B63C00F7B540 /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		55669F422BD6D91A00F7B540 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		55669F472BD6D94E00F7B540 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				55669F482BD6D96800F7B540 /* BaseViewController.swift */,
+				55669F4A2BD6DA4300F7B540 /* BasePresenter.swift */,
+				55669F4C2BD6FB0700F7B540 /* BaseUsecase.swift */,
+				55669F4E2BD6FB1800F7B540 /* BaseRepository.swift */,
+				55669F502BD6FB6A00F7B540 /* BaseLocalRepository.swift */,
+				55669F522BD6FCF800F7B540 /* BaseRemoteRepository.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +298,10 @@
 			dependencies = (
 			);
 			name = AlulaMVP;
+			packageProductDependencies = (
+				55669F382BD6B53400F7B540 /* Factory */,
+				55669F3D2BD6B58F00F7B540 /* Utilits */,
+			);
 			productName = AlulaMVP;
 			productReference = 55669EF42BD6A4FE00F7B540 /* AlulaMVP.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +330,10 @@
 				Base,
 			);
 			mainGroup = 55669EEB2BD6A4FE00F7B540;
+			packageReferences = (
+				55669F372BD6B53400F7B540 /* XCRemoteSwiftPackageReference "Factory" */,
+				55669F3A2BD6B55900F7B540 /* XCLocalSwiftPackageReference "../iOSProjects/Utilits" */,
+			);
 			productRefGroup = 55669EF52BD6A4FE00F7B540 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,8 +349,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				55669F042BD6A4FF00F7B540 /* LaunchScreen.storyboard in Resources */,
+				55669F362BD6B45B00F7B540 /* NeueBold.ttf in Resources */,
+				55669F342BD6B45600F7B540 /* NeueRoman.ttf in Resources */,
+				55669F352BD6B45800F7B540 /* NeueMediu.ttf in Resources */,
 				55669F012BD6A4FF00F7B540 /* Assets.xcassets in Resources */,
-				55669EFF2BD6A4FE00F7B540 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +363,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55669EFC2BD6A4FE00F7B540 /* ViewController.swift in Sources */,
+				55669F492BD6D96800F7B540 /* BaseViewController.swift in Sources */,
+				55669F4B2BD6DA4300F7B540 /* BasePresenter.swift in Sources */,
+				55669F4D2BD6FB0700F7B540 /* BaseUsecase.swift in Sources */,
+				55669F192BD6B04000F7B540 /* Coordinator.swift in Sources */,
 				55669EF82BD6A4FE00F7B540 /* AppDelegate.swift in Sources */,
+				55669F252BD6B14E00F7B540 /* HomeCoordinator.swift in Sources */,
+				55669F532BD6FCF800F7B540 /* BaseRemoteRepository.swift in Sources */,
+				55669F2A2BD6B25400F7B540 /* FontSystem.swift in Sources */,
+				55669F202BD6B0DA00F7B540 /* SignupCoordinator.swift in Sources */,
+				55669F302BD6B2AA00F7B540 /* IconDesignSystem.swift in Sources */,
+				55669F2D2BD6B27000F7B540 /* ColorSystem.swift in Sources */,
+				55669F4F2BD6FB1800F7B540 /* BaseRepository.swift in Sources */,
+				55669F162BD6AEB400F7B540 /* RootCoordinator.swift in Sources */,
+				55669F1B2BD6B06100F7B540 /* ChildCoordinator.swift in Sources */,
+				55669F512BD6FB6A00F7B540 /* BaseLocalRepository.swift in Sources */,
+				55669F1E2BD6B09E00F7B540 /* AuthCoordinator.swift in Sources */,
+				55669F222BD6B10E00F7B540 /* LoginCoordinator.swift in Sources */,
 				55669EFA2BD6A4FE00F7B540 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +387,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		55669EFD2BD6A4FE00F7B540 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				55669EFE2BD6A4FE00F7B540 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		55669F022BD6A4FF00F7B540 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +529,6 @@
 				INFOPLIST_FILE = AlulaMVP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +556,6 @@
 				INFOPLIST_FILE = AlulaMVP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +593,36 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		55669F3A2BD6B55900F7B540 /* XCLocalSwiftPackageReference "../iOSProjects/Utilits" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../iOSProjects/Utilits;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		55669F372BD6B53400F7B540 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55669F382BD6B53400F7B540 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55669F372BD6B53400F7B540 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+		55669F3D2BD6B58F00F7B540 /* Utilits */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Utilits;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 55669EEC2BD6A4FE00F7B540 /* Project object */;
 }
