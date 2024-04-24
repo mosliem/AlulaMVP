@@ -9,7 +9,7 @@ import UIKit
 
 class SignupViewController <
     PresenterType: SignupViewPresenterProtocol
->: UIViewController, BaseViewControllerProtocol {
+>: UIViewController, SignupViewProtocol {
     
     var presenter: PresenterType?
     

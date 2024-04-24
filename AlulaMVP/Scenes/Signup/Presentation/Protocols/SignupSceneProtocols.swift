@@ -7,9 +7,7 @@
 
 import Foundation
 
-protocol SignupViewProtocol: BaseViewControllerProtocol {
-    
-}
+protocol SignupViewProtocol: BaseViewControllerProtocol {}
 
 protocol SignupViewPresenterInputProtocol {
     func signupPressed()
