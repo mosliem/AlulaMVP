@@ -6,24 +6,31 @@
 //
 
 import Foundation
+import Utilits
 
-protocol BaseUsecaseProtocol: AnyObject {
-    associatedtype RepositoryType: BaseRepositoryProtocol
-    associatedtype ModelType
-    
-    var repository: RepositoryType? { get set }
-}
+//protocol BaseUsecaseProtocol {
+//    associatedtype RepositoryType: BaseRepositoryProtocol
+//    associatedtype ModelType
+//    
+//    var repository: RepositoryType? { get set }
+//    
+//    func execute<T>(
+//        with data: ModelType? ,
+//        success: @escaping(T) -> Void,
+//        failure: @escaping(APIError) -> Void
+//    )
+//}
 
-extension BaseUsecaseProtocol{
-    func execute<T>(
-        with data: ModelType? = nil,
-        completion: @escaping(T) -> Void
-    ) {}
-}
-
-class BaseUsecase<
-    RepositoryType: BaseRepositoryProtocol,
-    ModelType
->: BaseUsecaseProtocol {
+class BaseUsecase <RepositoryType, ModelType> {
     var repository: RepositoryType?
+    
+    init(repositoryType: RepositoryType? = nil) {
+        self.repository = repositoryType
+    }
+    
+    func execute<T>(
+        with data: ModelType? ,
+        success: @escaping(T) -> Void,
+        failure: @escaping(APIError) -> Void
+    ){}
 }

@@ -7,28 +7,29 @@
 
 import UIKit
 
-protocol BasePresenterProtocol: AnyObject {
-    associatedtype ViewType: BaseViewControllerProtocol
-    associatedtype CoordinatorType: Coordinator
-    associatedtype UsecaseType: BaseUsecaseProtocol
-    
-    var view: ViewType? { get set }
-    var coordinator: CoordinatorType? { get set }
-    var usecase: UsecaseType? { get set }
-    func viewDidLoad()
-}
+//Protocol Version
+//protocol BasePresenterProtocol {
+//    associatedtype ViewType: BaseViewControllerProtocol
+//    associatedtype CoordinatorType: Coordinator
+//    associatedtype UsecaseType: BaseUsecaseProtocol
+//    
+//    var view: ViewType? { get set }
+//    var coordinator: CoordinatorType? { get set }
+//    var usecase: UsecaseType? { get set }
+//    func viewDidLoad()
+//}
 
-class BasePresenter <
-    ViewType: BaseViewControllerProtocol,
-    CoordinatorType: Coordinator,
-    UsecaseType: BaseUsecaseProtocol
->: BasePresenterProtocol {
+//Class Version
+class BasePresenter <View, Coordinator, Usecase> {
+    var view: View?
+    var coordinator: Coordinator?
+    var usecase: Usecase?
     
-    var view: ViewType?
+    init(view: View?, coordinator: Coordinator?, usecase: Usecase?) {
+        self.view = view
+        self.coordinator = coordinator
+        self.usecase = usecase
+    }
     
-    var coordinator: CoordinatorType?
-    
-    var usecase: UsecaseType?
-    
-    func viewDidLoad() {}
+    func viewDidLoad(){}
 }
