@@ -8,7 +8,7 @@
 import Foundation
 import Utilits
 
-class LoginUsecase: BaseUsecase<LoginRepositoryProtocol, LoginData> {
+class LoginUsecase: BaseUsecase<LoginRepositoryProtocol, LoginData>, LoginUsecaseProtocol{
     
     var tokenAdapter: TokenAdapterProtocol?
     var repositoryAdapter: LoginRepositoryDataAdapter?
