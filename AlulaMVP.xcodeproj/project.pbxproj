@@ -13,7 +13,7 @@
 		55669F042BD6A4FF00F7B540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55669F022BD6A4FF00F7B540 /* LaunchScreen.storyboard */; };
 		55669F162BD6AEB400F7B540 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F152BD6AEB400F7B540 /* RootCoordinator.swift */; };
 		55669F192BD6B04000F7B540 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F182BD6B04000F7B540 /* Coordinator.swift */; };
-		55669F1B2BD6B06100F7B540 /* ChildCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F1A2BD6B06100F7B540 /* ChildCoordinator.swift */; };
+		55669F1B2BD6B06100F7B540 /* ParentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F1A2BD6B06100F7B540 /* ParentCoordinator.swift */; };
 		55669F1E2BD6B09E00F7B540 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F1D2BD6B09E00F7B540 /* AuthCoordinator.swift */; };
 		55669F202BD6B0DA00F7B540 /* SignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F1F2BD6B0DA00F7B540 /* SignupCoordinator.swift */; };
 		55669F222BD6B10E00F7B540 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55669F212BD6B10E00F7B540 /* LoginCoordinator.swift */; };
@@ -84,6 +84,11 @@
 		55F0A01A2BD9173A00BFF8FE /* Products.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A0182BD9173A00BFF8FE /* Products.xcdatamodeld */; };
 		55F0A01C2BD9183900BFF8FE /* HomeLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A01B2BD9183900BFF8FE /* HomeLocalRepository.swift */; };
 		55F0A01E2BD9184700BFF8FE /* HomeRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A01D2BD9184700BFF8FE /* HomeRemoteRepository.swift */; };
+		55F0A0262BD91FA700BFF8FE /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A0212BD91FA600BFF8FE /* DIContainer.swift */; };
+		55F0A0272BD91FA700BFF8FE /* LoginDependenciesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A0222BD91FA600BFF8FE /* LoginDependenciesFactory.swift */; };
+		55F0A0282BD91FA700BFF8FE /* HomeDependenciesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A0232BD91FA600BFF8FE /* HomeDependenciesFactory.swift */; };
+		55F0A0292BD91FA700BFF8FE /* FactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A0242BD91FA700BFF8FE /* FactoryProtocol.swift */; };
+		55F0A02A2BD91FA700BFF8FE /* SignupDependenciesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A0252BD91FA700BFF8FE /* SignupDependenciesFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,7 +100,7 @@
 		55669F052BD6A4FF00F7B540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55669F152BD6AEB400F7B540 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		55669F182BD6B04000F7B540 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		55669F1A2BD6B06100F7B540 /* ChildCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCoordinator.swift; sourceTree = "<group>"; };
+		55669F1A2BD6B06100F7B540 /* ParentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentCoordinator.swift; sourceTree = "<group>"; };
 		55669F1D2BD6B09E00F7B540 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		55669F1F2BD6B0DA00F7B540 /* SignupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCoordinator.swift; sourceTree = "<group>"; };
 		55669F212BD6B10E00F7B540 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
@@ -164,6 +169,11 @@
 		55F0A0192BD9173A00BFF8FE /* Products.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Products.xcdatamodel; sourceTree = "<group>"; };
 		55F0A01B2BD9183900BFF8FE /* HomeLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocalRepository.swift; sourceTree = "<group>"; };
 		55F0A01D2BD9184700BFF8FE /* HomeRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteRepository.swift; sourceTree = "<group>"; };
+		55F0A0212BD91FA600BFF8FE /* DIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		55F0A0222BD91FA600BFF8FE /* LoginDependenciesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDependenciesFactory.swift; sourceTree = "<group>"; };
+		55F0A0232BD91FA600BFF8FE /* HomeDependenciesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDependenciesFactory.swift; sourceTree = "<group>"; };
+		55F0A0242BD91FA700BFF8FE /* FactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryProtocol.swift; sourceTree = "<group>"; };
+		55F0A0252BD91FA700BFF8FE /* SignupDependenciesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupDependenciesFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,7 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				55669F182BD6B04000F7B540 /* Coordinator.swift */,
-				55669F1A2BD6B06100F7B540 /* ChildCoordinator.swift */,
+				55669F1A2BD6B06100F7B540 /* ParentCoordinator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -364,6 +374,9 @@
 		55669F3F2BD6B63C00F7B540 /* DIContainer */ = {
 			isa = PBXGroup;
 			children = (
+				55F0A0212BD91FA600BFF8FE /* DIContainer.swift */,
+				55F0A0242BD91FA700BFF8FE /* FactoryProtocol.swift */,
+				55F0A02B2BD91FB200BFF8FE /* DI Factory */,
 			);
 			path = DIContainer;
 			sourceTree = "<group>";
@@ -806,6 +819,16 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		55F0A02B2BD91FB200BFF8FE /* DI Factory */ = {
+			isa = PBXGroup;
+			children = (
+				55F0A0232BD91FA600BFF8FE /* HomeDependenciesFactory.swift */,
+				55F0A0222BD91FA600BFF8FE /* LoginDependenciesFactory.swift */,
+				55F0A0252BD91FA700BFF8FE /* SignupDependenciesFactory.swift */,
+			);
+			path = "DI Factory";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -903,15 +926,19 @@
 				55669F812BD7321F00F7B540 /* Endpoint.swift in Sources */,
 				55669F8E2BD7413C00F7B540 /* SignupRepositoryData.swift in Sources */,
 				55F0A00D2BD9137600BFF8FE /* FetchProductsUsecaseProtocol.swift in Sources */,
+				55F0A0262BD91FA700BFF8FE /* DIContainer.swift in Sources */,
 				55669F492BD6D96800F7B540 /* BaseViewController.swift in Sources */,
 				55F09FD92BD902FC00BFF8FE /* LoginUsecaseProtocol.swift in Sources */,
 				55F09FC02BD8FEF100BFF8FE /* LoginData.swift in Sources */,
 				55669F4B2BD6DA4300F7B540 /* BasePresenter.swift in Sources */,
+				55F0A0282BD91FA700BFF8FE /* HomeDependenciesFactory.swift in Sources */,
 				55F09FA52BD881F600BFF8FE /* SignupUserAdapter.swift in Sources */,
 				55F0A0122BD9156800BFF8FE /* HomeAPIPath.swift in Sources */,
+				55F0A0292BD91FA700BFF8FE /* FactoryProtocol.swift in Sources */,
 				55F09FBD2BD8FDE100BFF8FE /* LoginSceneProtocols.swift in Sources */,
 				55669F4D2BD6FB0700F7B540 /* BaseUsecase.swift in Sources */,
 				55669F192BD6B04000F7B540 /* Coordinator.swift in Sources */,
+				55F0A02A2BD91FA700BFF8FE /* SignupDependenciesFactory.swift in Sources */,
 				55F0A00A2BD9135200BFF8FE /* HomeRepositoryProtocol.swift in Sources */,
 				55669EF82BD6A4FE00F7B540 /* AppDelegate.swift in Sources */,
 				55F09FD42BD900CA00BFF8FE /* LoginRepositoryData.swift in Sources */,
@@ -947,9 +974,10 @@
 				55F0A0002BD9129400BFF8FE /* ProductEntity.swift in Sources */,
 				55F09FDE2BD905FC00BFF8FE /* TokenAdapter.swift in Sources */,
 				55669F162BD6AEB400F7B540 /* RootCoordinator.swift in Sources */,
+				55F0A0272BD91FA700BFF8FE /* LoginDependenciesFactory.swift in Sources */,
 				55669F6B2BD714ED00F7B540 /* SignupSceneProtocols.swift in Sources */,
 				55F09FCA2BD8FF7700BFF8FE /* LoginAPIEndpoint.swift in Sources */,
-				55669F1B2BD6B06100F7B540 /* ChildCoordinator.swift in Sources */,
+				55669F1B2BD6B06100F7B540 /* ParentCoordinator.swift in Sources */,
 				55F09FCC2BD8FF8A00BFF8FE /* LoginAPIPath.swift in Sources */,
 				55F0A01E2BD9184700BFF8FE /* HomeRemoteRepository.swift in Sources */,
 				55669F512BD6FB6A00F7B540 /* BaseLocalRepository.swift in Sources */,

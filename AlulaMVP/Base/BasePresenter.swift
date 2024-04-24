@@ -25,7 +25,7 @@ class BasePresenter <View, Coordinator, Usecase> {
     var coordinator: Coordinator?
     var usecase: Usecase?
     
-    init(view: View?, coordinator: Coordinator?, usecase: Usecase?) {
+    init(view: View? = nil, coordinator: Coordinator?, usecase: Usecase?) {
         self.view = view
         self.coordinator = coordinator
         self.usecase = usecase
