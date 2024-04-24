@@ -7,17 +7,9 @@
 
 import UIKit
 
-protocol BaseViewControllerProtocol: AnyObject {
-    associatedtype PresenterType: BasePresenterProtocol
-    
+protocol BaseViewControllerProtocol {
+    associatedtype PresenterType
     var presenter: PresenterType? {get set}
 }
 
-class BaseViewController <
-    PresenterType: BasePresenterProtocol
->: UIViewController,
-   BaseViewControllerProtocol {
-    
-    var presenter: PresenterType?
 
-}

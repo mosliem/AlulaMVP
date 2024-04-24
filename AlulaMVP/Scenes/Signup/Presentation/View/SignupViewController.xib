@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeueMediu.ttf">
+            <string>NeueHaasDisplay-Mediu</string>
+        </array>
+        <array key="NeueRoman.ttf">
+            <string>NeueHaasDisplay-Roman</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupViewController" customModule="AlulaMVP" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="res-3p-q0x" id="Cmy-l3-brW"/>
+                <outlet property="firstNameTextField" destination="Ajf-KS-dSc" id="g5i-KC-Dpj"/>
+                <outlet property="lastNameTextField" destination="RKz-MF-xtn" id="g1Y-Iz-OXB"/>
+                <outlet property="passwordTextField" destination="PrH-3W-dOW" id="3pq-Jd-Aku"/>
+                <outlet property="phoneNumberTextField" destination="Q8r-ic-Awg" id="i2q-pb-esf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Gpx-Ia-Wgn">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup_logo" translatesAutoresizingMaskIntoConstraints="NO" id="oc7-ZX-WEr">
+                    <rect key="frame" x="140" y="117" width="112" height="94"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="94" id="48u-U4-puc"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Alula People" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ga0-g1-MZn">
+                    <rect key="frame" x="90" y="219" width="213" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="qBX-hS-WJV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register and join our community" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGj-cS-AhX">
+                    <rect key="frame" x="94" y="258" width="205" height="14"/>
+                    <fontDescription key="fontDescription" name="NeueHaasDisplay-Roman" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                    <color key="textColor" white="0.67000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajf-KS-dSc" userLabel="FirstName" customClass="FloatingLabelTextField" customModule="Alula" customModuleProvider="target">
+                    <rect key="frame" x="16" y="322" width="174" height="64"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="dQs-Dw-KAb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKz-MF-xtn" userLabel="LastName" customClass="FloatingLabelTextField" customModule="Alula" customModuleProvider="target">
+                    <rect key="frame" x="203" y="322" width="174" height="64"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="prS-R6-tSz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q8r-ic-Awg" userLabel="Phonenumber" customClass="FloatingLabelTextField" customModule="Alula" customModuleProvider="target">
+                    <rect key="frame" x="16" y="394" width="361" height="64"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="RFe-f3-kZ2"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="res-3p-q0x" userLabel="Email" customClass="FloatingLabelTextField" customModule="Alula" customModuleProvider="target">
+                    <rect key="frame" x="16" y="474" width="361" height="64"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="OqS-Un-Xtq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PrH-3W-dOW" userLabel="Password" customClass="FloatingLabelTextField" customModule="Alula" customModuleProvider="target">
+                    <rect key="frame" x="16" y="554" width="361" height="64"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="TzM-SP-T2Y"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJE-89-0U3">
+                    <rect key="frame" x="16" y="650" width="361" height="56"/>
+                    <color key="backgroundColor" name="primary"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="HXh-UE-T3I"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Signup">
+                        <fontDescription key="titleFontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="18"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="didPressSignupButton:" destination="-1" eventType="touchUpInside" id="Z9m-2q-uL1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THf-xC-MfA">
+                    <rect key="frame" x="16" y="722" width="361" height="48"/>
+                    <color key="backgroundColor" name="Secondary"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="yog-Xg-XPl"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Already Member? Login">
+                        <fontDescription key="titleFontDescription" name="NeueHaasDisplay-Mediu" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="didPressAlreadyMemberButton:" destination="-1" eventType="touchUpInside" id="ag6-D2-hxb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="aUJ-xF-ykc"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="oc7-ZX-WEr" firstAttribute="leading" secondItem="aUJ-xF-ykc" secondAttribute="leading" constant="140" id="06V-Th-kCe"/>
+                <constraint firstItem="aUJ-xF-ykc" firstAttribute="trailing" secondItem="res-3p-q0x" secondAttribute="trailing" constant="16" id="0uq-mL-MlC"/>
+                <constraint firstItem="Ajf-KS-dSc" firstAttribute="top" secondItem="aGj-cS-AhX" secondAttribute="bottom" constant="50" id="25P-0s-sG6"/>
+                <constraint firstItem="RKz-MF-xtn" firstAttribute="width" secondItem="Ajf-KS-dSc" secondAttribute="width" id="78G-cQ-tRW"/>
+                <constraint firstItem="aUJ-xF-ykc" firstAttribute="trailing" secondItem="PrH-3W-dOW" secondAttribute="trailing" constant="16" id="Amq-N8-8VF"/>
+                <constraint firstItem="Q8r-ic-Awg" firstAttribute="top" secondItem="Ajf-KS-dSc" secondAttribute="bottom" constant="8" id="DNr-5G-Vw3"/>
+                <constraint firstItem="res-3p-q0x" firstAttribute="leading" secondItem="aUJ-xF-ykc" secondAttribute="leading" constant="16" id="DiE-KW-tBu"/>
+                <constraint firstItem="Ajf-KS-dSc" firstAttribute="leading" secondItem="aUJ-xF-ykc" secondAttribute="leading" constant="16" id="Dq3-lv-um8"/>
+                <constraint firstItem="aUJ-xF-ykc" firstAttribute="trailing" secondItem="aGj-cS-AhX" secondAttribute="trailing" constant="94" id="GUX-Wh-8S4"/>
+                <constraint firstItem="Q8r-ic-Awg" firstAttribute="leading" secondItem="aUJ-xF-ykc" secondAttribute="leading" constant="16" id="Nd2-Im-CK0"/>
+                <constraint firstItem="PrH-3W-dOW" firstAttribute="top" secondItem="res-3p-q0x" secondAttribute="bottom" constant="16" id="OtE-4i-pyX"/>
+                <constraint firstItem="THf-xC-MfA" firstAttribute="leading" secondItem="aUJ-xF-ykc" secondAttribute="leading" constant="16" id="TFe-Az-ttr"/>
+                <constraint firstItem="aUJ-xF-ykc" firstAttribute="trailing" secondItem="oc7-ZX-WEr" secondAttribute="trailing" constant="141" id="V7z-Fv-iSC"/>
+                <constraint firstItem="THf-xC-MfA" firstAttribute="top" secondItem="PJE-89-0U3" secondAttribute="bottom" constant="16" id="WRf-xs-ALL"/>
+                <constraint firstItem="RKz-MF-xtn" firstAttribute="top" secondItem="aGj-cS-AhX" secondAttribute="bottom" constant="50" id="WWZ-Vj-Oim"/>
+                <constraint firstItem="aGj-cS-AhX" firstAttribute="leading" secondItem="aUJ-xF-ykc" secondAttribute="leading" constant="94" id="X73-hg-hQX"/>
+                <constraint firstItem="aUJ-xF-ykc" firstAttribute="trailing" secondItem="RKz-MF-xtn" secondAttribute="trailing" constant="16" id="XDH-JU-FTo"/>
+                <constraint firstItem="ga0-g1-MZn" firstAttribute="leading" secondItem="aUJ-xF-ykc" secondAttribute="leading" constant="90" id="Xlt-9a-9JJ"/>
+                <constraint firstItem="res-3p-q0x" firstAttribute="top" secondItem="Q8r-ic-Awg" secondAttribute="bottom" constant="16" id="bO3-OB-Yof"/>
+                <constraint firstItem="oc7-ZX-WEr" firstAttribute="top" secondItem="Gpx-Ia-Wgn" secondAttribute="top" constant="117" id="bRY-Oc-QlZ"/>
+                <constraint firstItem="PJE-89-0U3" firstAttribute="top" secondItem="PrH-3W-dOW" secondAttribute="bottom" constant="32" id="dFd-Ec-ykm"/>
+                <constraint firstItem="PrH-3W-dOW" firstAttribute="leading" secondItem="aUJ-xF-ykc" secondAttribute="leading" constant="16" id="dm7-E9-oLS"/>
+                <constraint firstItem="aGj-cS-AhX" firstAttribute="top" secondItem="ga0-g1-MZn" secondAttribute="bottom" constant="11" id="gDw-fm-pEh"/>
+                <constraint firstItem="aUJ-xF-ykc" firstAttribute="trailing" secondItem="PJE-89-0U3" secondAttribute="trailing" constant="16" id="iNa-Rq-anq"/>
+                <constraint firstItem="PJE-89-0U3" firstAttribute="leading" secondItem="aUJ-xF-ykc" secondAttribute="leading" constant="16" id="qGD-mg-N9q"/>
+                <constraint firstItem="aUJ-xF-ykc" firstAttribute="trailing" secondItem="Q8r-ic-Awg" secondAttribute="trailing" constant="16" id="rFL-dy-URD"/>
+                <constraint firstItem="ga0-g1-MZn" firstAttribute="top" secondItem="oc7-ZX-WEr" secondAttribute="bottom" constant="8" id="tMH-lD-Ard"/>
+                <constraint firstItem="aUJ-xF-ykc" firstAttribute="trailing" secondItem="THf-xC-MfA" secondAttribute="trailing" constant="16" id="xoJ-qB-c4L"/>
+                <constraint firstItem="aUJ-xF-ykc" firstAttribute="trailing" secondItem="ga0-g1-MZn" secondAttribute="trailing" constant="90" id="yuH-eA-kPE"/>
+                <constraint firstItem="RKz-MF-xtn" firstAttribute="leading" secondItem="Ajf-KS-dSc" secondAttribute="trailing" constant="13" id="zAe-K0-xbB"/>
+            </constraints>
+            <point key="canvasLocation" x="6" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="signup_logo" width="94" height="94"/>
+        <namedColor name="Secondary">
+            <color red="0.9649999737739563" green="0.85100001096725464" blue="0.79400002956390381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.62800002098083496" green="0.19799999892711639" blue="0.14399999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

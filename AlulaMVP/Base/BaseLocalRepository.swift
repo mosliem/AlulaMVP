@@ -7,7 +7,13 @@
 
 import Foundation
 
-protocol BaseLocalRepositoryProtocol: AnyObject {
-    associatedtype LocalModelType
-    func execute<T>(model: LocalModelType, completion: @escaping(T) -> Void)
+//protocol BaseLocalRepositoryProtocol{
+//    associatedtype ModelType
+//    func execute<T>(model: ModelType, completion: @escaping(T) -> Void)
+//}
+
+class BaseLocalRepository<ModelType> {
+    func execute<T>(model: ModelType, completion: @escaping(T) -> Void){
+        
+    }
 }

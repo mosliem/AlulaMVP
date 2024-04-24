@@ -6,8 +6,34 @@
 //
 
 import Foundation
+import Combine
+import Utilits
 
-protocol BaseRemoteRepositoryProtocol: AnyObject {
-    associatedtype RemoteModelType
-    func execute<T>(model: RemoteModelType, completion: @escaping(T) -> Void)
+//protocol BaseRemoteRepositoryProtocol: BaseRepositoryProtocol {
+//    associatedtype ModelType
+//    func execute<T>(model: ModelType?) -> AnyPublisher<T,APIError>
+//}
+
+protocol BaseRemoteRepositoryProtocol {
+    associatedtype ModelType
+    
+    func execute<ResponseType: Codable>(
+        repoModel: ModelType?,
+        responseModel: ResponseType.Type
+    ) -> AnyPublisher<
+        ResponseType,
+        APIError
+    >
 }
+
+//class BaseRemoteRepository<ModelType> {
+//    func execute<ResponseType: Codable>(
+//        repoModel: ModelType?,
+//        responseModel: ResponseType.Type
+//    ) -> AnyPublisher<
+//        ResponseType,
+//        APIError
+//    > {
+//        
+//    }
+//}
