@@ -67,6 +67,23 @@
 		55F09FD92BD902FC00BFF8FE /* LoginUsecaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F09FD82BD902FC00BFF8FE /* LoginUsecaseProtocol.swift */; };
 		55F09FDC2BD903F700BFF8FE /* LoginRepositoryDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F09FDB2BD903F700BFF8FE /* LoginRepositoryDataAdapter.swift */; };
 		55F09FDE2BD905FC00BFF8FE /* TokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F09FDD2BD905FC00BFF8FE /* TokenAdapter.swift */; };
+		55F09FEE2BD90C6300BFF8FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F09FEC2BD90C6300BFF8FE /* HomeViewController.swift */; };
+		55F09FEF2BD90C6300BFF8FE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F09FED2BD90C6300BFF8FE /* HomeViewController.xib */; };
+		55F09FF12BD90C6E00BFF8FE /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F09FF02BD90C6E00BFF8FE /* HomePresenter.swift */; };
+		55F09FF32BD9107200BFF8FE /* HomeSceneProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F09FF22BD9107200BFF8FE /* HomeSceneProtocols.swift */; };
+		55F0A0002BD9129400BFF8FE /* ProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F09FFF2BD9129400BFF8FE /* ProductEntity.swift */; };
+		55F0A0022BD912C200BFF8FE /* CategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A0012BD912C200BFF8FE /* CategoryEntity.swift */; };
+		55F0A0062BD9130300BFF8FE /* FetchProductsUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A0052BD9130300BFF8FE /* FetchProductsUsecase.swift */; };
+		55F0A0082BD9132B00BFF8FE /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A0072BD9132B00BFF8FE /* HomeRepository.swift */; };
+		55F0A00A2BD9135200BFF8FE /* HomeRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A0092BD9135200BFF8FE /* HomeRepositoryProtocol.swift */; };
+		55F0A00D2BD9137600BFF8FE /* FetchProductsUsecaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A00C2BD9137600BFF8FE /* FetchProductsUsecaseProtocol.swift */; };
+		55F0A0102BD914DD00BFF8FE /* HomeAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A00F2BD914DD00BFF8FE /* HomeAPIEndpoint.swift */; };
+		55F0A0122BD9156800BFF8FE /* HomeAPIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A0112BD9156800BFF8FE /* HomeAPIPath.swift */; };
+		55F0A0142BD9158800BFF8FE /* ProductDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A0132BD9158800BFF8FE /* ProductDTO.swift */; };
+		55F0A0172BD916D000BFF8FE /* CoredataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A0162BD916D000BFF8FE /* CoredataStorage.swift */; };
+		55F0A01A2BD9173A00BFF8FE /* Products.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A0182BD9173A00BFF8FE /* Products.xcdatamodeld */; };
+		55F0A01C2BD9183900BFF8FE /* HomeLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A01B2BD9183900BFF8FE /* HomeLocalRepository.swift */; };
+		55F0A01E2BD9184700BFF8FE /* HomeRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A01D2BD9184700BFF8FE /* HomeRemoteRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +147,23 @@
 		55F09FD82BD902FC00BFF8FE /* LoginUsecaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUsecaseProtocol.swift; sourceTree = "<group>"; };
 		55F09FDB2BD903F700BFF8FE /* LoginRepositoryDataAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryDataAdapter.swift; sourceTree = "<group>"; };
 		55F09FDD2BD905FC00BFF8FE /* TokenAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenAdapter.swift; sourceTree = "<group>"; };
+		55F09FEC2BD90C6300BFF8FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		55F09FED2BD90C6300BFF8FE /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		55F09FF02BD90C6E00BFF8FE /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		55F09FF22BD9107200BFF8FE /* HomeSceneProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneProtocols.swift; sourceTree = "<group>"; };
+		55F09FFF2BD9129400BFF8FE /* ProductEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEntity.swift; sourceTree = "<group>"; };
+		55F0A0012BD912C200BFF8FE /* CategoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEntity.swift; sourceTree = "<group>"; };
+		55F0A0052BD9130300BFF8FE /* FetchProductsUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchProductsUsecase.swift; sourceTree = "<group>"; };
+		55F0A0072BD9132B00BFF8FE /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		55F0A0092BD9135200BFF8FE /* HomeRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepositoryProtocol.swift; sourceTree = "<group>"; };
+		55F0A00C2BD9137600BFF8FE /* FetchProductsUsecaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchProductsUsecaseProtocol.swift; sourceTree = "<group>"; };
+		55F0A00F2BD914DD00BFF8FE /* HomeAPIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPIEndpoint.swift; sourceTree = "<group>"; };
+		55F0A0112BD9156800BFF8FE /* HomeAPIPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPIPath.swift; sourceTree = "<group>"; };
+		55F0A0132BD9158800BFF8FE /* ProductDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDTO.swift; sourceTree = "<group>"; };
+		55F0A0162BD916D000BFF8FE /* CoredataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataStorage.swift; sourceTree = "<group>"; };
+		55F0A0192BD9173A00BFF8FE /* Products.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Products.xcdatamodel; sourceTree = "<group>"; };
+		55F0A01B2BD9183900BFF8FE /* HomeLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocalRepository.swift; sourceTree = "<group>"; };
+		55F0A01D2BD9184700BFF8FE /* HomeRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +233,7 @@
 		55669F0D2BD6A96B00F7B540 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				55F09FE52BD90C1C00BFF8FE /* Home */,
 				55F09FAB2BD8FBE000BFF8FE /* Login */,
 				55669F122BD6A9FE00F7B540 /* Signup */,
 			);
@@ -635,6 +670,142 @@
 			path = Adapter;
 			sourceTree = "<group>";
 		};
+		55F09FE52BD90C1C00BFF8FE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				55F09FE82BD90C3200BFF8FE /* Domain */,
+				55F09FE72BD90C2C00BFF8FE /* Data */,
+				55F09FE62BD90C2200BFF8FE /* Presentation */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		55F09FE62BD90C2200BFF8FE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				55F09FEB2BD90C5200BFF8FE /* Protocols */,
+				55F09FEA2BD90C4B00BFF8FE /* Presenter */,
+				55F09FE92BD90C4400BFF8FE /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		55F09FE72BD90C2C00BFF8FE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				55F0A0152BD916C100BFF8FE /* CoreData */,
+				55F09FF52BD9118800BFF8FE /* Repository */,
+				55F09FF42BD9118200BFF8FE /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		55F09FE82BD90C3200BFF8FE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				55F0A0042BD912DA00BFF8FE /* Usecase */,
+				55F0A0032BD912CF00BFF8FE /* Interface */,
+				55F09FFE2BD9128000BFF8FE /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		55F09FE92BD90C4400BFF8FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55F09FEC2BD90C6300BFF8FE /* HomeViewController.swift */,
+				55F09FED2BD90C6300BFF8FE /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55F09FEA2BD90C4B00BFF8FE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				55F09FF02BD90C6E00BFF8FE /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		55F09FEB2BD90C5200BFF8FE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				55F09FF22BD9107200BFF8FE /* HomeSceneProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		55F09FF42BD9118200BFF8FE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				55F0A00E2BD9147600BFF8FE /* APIEndpoint */,
+				55F09FF72BD911AE00BFF8FE /* DTO */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		55F09FF52BD9118800BFF8FE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				55F0A0072BD9132B00BFF8FE /* HomeRepository.swift */,
+				55F0A01B2BD9183900BFF8FE /* HomeLocalRepository.swift */,
+				55F0A01D2BD9184700BFF8FE /* HomeRemoteRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		55F09FF72BD911AE00BFF8FE /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				55F0A0132BD9158800BFF8FE /* ProductDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		55F09FFE2BD9128000BFF8FE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				55F09FFF2BD9129400BFF8FE /* ProductEntity.swift */,
+				55F0A0012BD912C200BFF8FE /* CategoryEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		55F0A0032BD912CF00BFF8FE /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				55F0A0092BD9135200BFF8FE /* HomeRepositoryProtocol.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		55F0A0042BD912DA00BFF8FE /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				55F0A0052BD9130300BFF8FE /* FetchProductsUsecase.swift */,
+				55F0A00C2BD9137600BFF8FE /* FetchProductsUsecaseProtocol.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		55F0A00E2BD9147600BFF8FE /* APIEndpoint */ = {
+			isa = PBXGroup;
+			children = (
+				55F0A00F2BD914DD00BFF8FE /* HomeAPIEndpoint.swift */,
+				55F0A0112BD9156800BFF8FE /* HomeAPIPath.swift */,
+			);
+			path = APIEndpoint;
+			sourceTree = "<group>";
+		};
+		55F0A0152BD916C100BFF8FE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				55F0A0182BD9173A00BFF8FE /* Products.xcdatamodeld */,
+				55F0A0162BD916D000BFF8FE /* CoredataStorage.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -709,6 +880,7 @@
 				55669F352BD6B45800F7B540 /* NeueMediu.ttf in Resources */,
 				55669F662BD7142B00F7B540 /* SignupViewController.xib in Resources */,
 				55669F012BD6A4FF00F7B540 /* Assets.xcassets in Resources */,
+				55F09FEF2BD90C6300BFF8FE /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,7 +892,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F09FB92BD8FCAF00BFF8FE /* LoginViewController.swift in Sources */,
+				55F0A01A2BD9173A00BFF8FE /* Products.xcdatamodeld in Sources */,
 				55669F742BD730B100F7B540 /* User.swift in Sources */,
+				55F0A0022BD912C200BFF8FE /* CategoryEntity.swift in Sources */,
 				55669F682BD714AF00F7B540 /* SignupPresenter.swift in Sources */,
 				55F09FD72BD902ED00BFF8FE /* LoginUsecase.swift in Sources */,
 				55669F6E2BD7155000F7B540 /* RemoteSignupRepository.swift in Sources */,
@@ -728,42 +902,56 @@
 				55669F5A2BD7123A00F7B540 /* FloatingLabelTextField.swift in Sources */,
 				55669F812BD7321F00F7B540 /* Endpoint.swift in Sources */,
 				55669F8E2BD7413C00F7B540 /* SignupRepositoryData.swift in Sources */,
+				55F0A00D2BD9137600BFF8FE /* FetchProductsUsecaseProtocol.swift in Sources */,
 				55669F492BD6D96800F7B540 /* BaseViewController.swift in Sources */,
 				55F09FD92BD902FC00BFF8FE /* LoginUsecaseProtocol.swift in Sources */,
 				55F09FC02BD8FEF100BFF8FE /* LoginData.swift in Sources */,
 				55669F4B2BD6DA4300F7B540 /* BasePresenter.swift in Sources */,
 				55F09FA52BD881F600BFF8FE /* SignupUserAdapter.swift in Sources */,
+				55F0A0122BD9156800BFF8FE /* HomeAPIPath.swift in Sources */,
 				55F09FBD2BD8FDE100BFF8FE /* LoginSceneProtocols.swift in Sources */,
 				55669F4D2BD6FB0700F7B540 /* BaseUsecase.swift in Sources */,
 				55669F192BD6B04000F7B540 /* Coordinator.swift in Sources */,
+				55F0A00A2BD9135200BFF8FE /* HomeRepositoryProtocol.swift in Sources */,
 				55669EF82BD6A4FE00F7B540 /* AppDelegate.swift in Sources */,
 				55F09FD42BD900CA00BFF8FE /* LoginRepositoryData.swift in Sources */,
 				55F09FA32BD7545200BFF8FE /* SignupRepositoryAdapter.swift in Sources */,
+				55F09FEE2BD90C6300BFF8FE /* HomeViewController.swift in Sources */,
 				55669F252BD6B14E00F7B540 /* HomeCoordinator.swift in Sources */,
 				55F09FC32BD8FF1200BFF8FE /* TokenDTO.swift in Sources */,
+				55F0A0142BD9158800BFF8FE /* ProductDTO.swift in Sources */,
 				55669F852BD735E700F7B540 /* SignupViewController.swift in Sources */,
 				55669F832BD7326000F7B540 /* SignupApiPath.swift in Sources */,
 				55F09FD22BD9005D00BFF8FE /* LoginRepositoryProtocol.swift in Sources */,
 				55669F882BD73D0B00F7B540 /* SignupUsecase.swift in Sources */,
+				55F0A0102BD914DD00BFF8FE /* HomeAPIEndpoint.swift in Sources */,
 				55F09FC62BD8FF2E00BFF8FE /* Token.swift in Sources */,
 				55669F532BD6FCF800F7B540 /* BaseRemoteRepository.swift in Sources */,
 				55669F7E2BD731F600F7B540 /* SignupEndpoint.swift in Sources */,
 				55669F712BD7157200F7B540 /* SignupRepositoryProtocol.swift in Sources */,
 				55669F2A2BD6B25400F7B540 /* FontSystem.swift in Sources */,
 				55669F202BD6B0DA00F7B540 /* SignupCoordinator.swift in Sources */,
+				55F0A0062BD9130300BFF8FE /* FetchProductsUsecase.swift in Sources */,
 				55669F302BD6B2AA00F7B540 /* IconDesignSystem.swift in Sources */,
 				55669F7A2BD7319A00F7B540 /* UserSignupDto.swift in Sources */,
+				55F09FF12BD90C6E00BFF8FE /* HomePresenter.swift in Sources */,
+				55F0A01C2BD9183900BFF8FE /* HomeLocalRepository.swift in Sources */,
 				55F09FCF2BD8FFCA00BFF8FE /* LoginRepository.swift in Sources */,
+				55F0A0172BD916D000BFF8FE /* CoredataStorage.swift in Sources */,
 				55669F2D2BD6B27000F7B540 /* ColorSystem.swift in Sources */,
 				55669F8A2BD73D1D00F7B540 /* SignupUsecaseProtocol.swift in Sources */,
 				55669F5C2BD7132D00F7B540 /* FloatingTextFieldModel.swift in Sources */,
 				55669F772BD730DF00F7B540 /* SignupData.swift in Sources */,
+				55F0A0082BD9132B00BFF8FE /* HomeRepository.swift in Sources */,
+				55F09FF32BD9107200BFF8FE /* HomeSceneProtocols.swift in Sources */,
+				55F0A0002BD9129400BFF8FE /* ProductEntity.swift in Sources */,
 				55F09FDE2BD905FC00BFF8FE /* TokenAdapter.swift in Sources */,
 				55669F162BD6AEB400F7B540 /* RootCoordinator.swift in Sources */,
 				55669F6B2BD714ED00F7B540 /* SignupSceneProtocols.swift in Sources */,
 				55F09FCA2BD8FF7700BFF8FE /* LoginAPIEndpoint.swift in Sources */,
 				55669F1B2BD6B06100F7B540 /* ChildCoordinator.swift in Sources */,
 				55F09FCC2BD8FF8A00BFF8FE /* LoginAPIPath.swift in Sources */,
+				55F0A01E2BD9184700BFF8FE /* HomeRemoteRepository.swift in Sources */,
 				55669F512BD6FB6A00F7B540 /* BaseLocalRepository.swift in Sources */,
 				55669F1E2BD6B09E00F7B540 /* AuthCoordinator.swift in Sources */,
 				55F09FBB2BD8FDB300BFF8FE /* LoginPresenter.swift in Sources */,
@@ -1011,6 +1199,19 @@
 			productName = Utilits;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		55F0A0182BD9173A00BFF8FE /* Products.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				55F0A0192BD9173A00BFF8FE /* Products.xcdatamodel */,
+			);
+			currentVersion = 55F0A0192BD9173A00BFF8FE /* Products.xcdatamodel */;
+			path = Products.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 55669EEC2BD6A4FE00F7B540 /* Project object */;
 }
